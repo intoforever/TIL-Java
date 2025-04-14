@@ -1,0 +1,14 @@
+# IDE
+.idea/
+*.iml
+
+# Build
+/out/
+/build/
+
+# Class files
+*.class
+
+# 기타
+/shelf/
+/workspace.xml
