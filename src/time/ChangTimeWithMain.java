@@ -21,5 +21,20 @@ public class ChangTimeWithMain {
         // 편의메서드 제공해줌
         LocalDateTime changedDt2 = dt.withYear(2020);
         System.out.println("changedDt2 = " + changedDt2);
+
+        /*
+        * 복잡한 시간 계산은 TemporalAdjusters 사용
+        * I/F: TemporalAdjuster
+        * Class: TemporalAdjusters
+        * DayOfWeek: 월화수목금토일을 나타내는 열거형
+        * */
+        // 다음주 금요일
+        LocalDateTime with1 = dt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY)); // Adjuster 아니고 Adjusters임!!!
+        System.out.println("기준 날짜: " + dt);
+        System.out.println("다음 금요일: " + with1);
+
+        // 이번 달의 마지막 일요일
+        LocalDateTime with2 = dt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY)); // Adjuster 아니고 Adjusters임!!!
+        System.out.println("같은 달의 마지막 일요일 = " + with2);
     }
 }
