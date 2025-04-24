@@ -1,5 +1,11 @@
 package nested.nested;
 
+/*
+* 중첩(Nested): 어떤 다른 것이 내부에 위치하거나 포함되는 구조적인 관계
+* 나의 안에 있지만 내것이 아닌 것
+* (단순히 위치만 안에 있는 것)
+* 
+**/
 public class NestedOuter {
     private static int outClassValue = 3;
     private int outInstanceValue = 2;
