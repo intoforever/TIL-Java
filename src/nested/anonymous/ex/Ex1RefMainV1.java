@@ -2,6 +2,11 @@ package nested.anonymous.ex;
 
 import java.util.Random;
 
+/*
+* 80강 익명 클래스 활용2
+* 문자열 같은 데이터를 메서드에 전달할 때는 String, int와 같은 각 데이터에 맞는 타입을 전달하면 된다.
+* 코드 조각을 메서드에 전달할 때는 인스턴스를 전달하고, 해당 인스턴스에 있는 메서드를 호출하면 된다.
+* */
 public class Ex1RefMainV1 {
 
     public static void hello(Process process) {
@@ -32,7 +37,11 @@ public class Ex1RefMainV1 {
     }
 
     public static void main(String[] args) {
-        hello(new Dice());
-        hello(new Sum());
+        Dice dice = new Dice();
+        Sum sum = new Sum();
+
+        System.out.println("===== hello 호출 시작! =====");
+        hello(dice);
+        hello(sum);
     }
 }
