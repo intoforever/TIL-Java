@@ -18,25 +18,25 @@ public class Ex1RefMainV3 {
     }
 
     public static void main(String[] args) {
-        System.out.println("===== hello 호출 시작! =====");
-
-        // 1. dice
-        hello(new Process() {
+        Process dice = new Process() {
             @Override
             public void run() {
                 int randomValue = new Random().nextInt(6) + 1;
                 System.out.println("주사위 = " + randomValue);
             }
-        });
+        };
 
-        // 2. sum
-        hello(new Process() {
+        Process sum = new Process() {
             @Override
             public void run() {
                 for (int i = 0; i < 3; i++) {
                     System.out.println("i = " + i);
                 }
             }
-        });
+        };
+
+        System.out.println("===== hello 호출 시작! =====");
+        hello(dice);
+        hello(sum);
     }
 }
