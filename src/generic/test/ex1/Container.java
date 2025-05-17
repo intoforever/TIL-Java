@@ -1,17 +1,17 @@
 package generic.test.ex1;
 
 public class Container<T> {
-    private T value;
+    private T item;
 
-    public void setItem(T data1) {
-        this.value = data1;
+    public void setItem(T item) {
+        this.item = item;
     }
 
     public T getItem() {
-        return value;
+        return item;
     }
 
     public boolean isEmpty() {
-        return value == null;
+        return item == null;
     }
 }
