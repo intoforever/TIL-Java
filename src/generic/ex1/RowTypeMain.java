@@ -1,4 +1,4 @@
-package generic;
+package generic.ex1;
 
 /**
  * 제네릭 타입을 사용할 때는 항상 <>을 사용해서 사용시점에 원하는 타입을 지정해야 한다. (권장)

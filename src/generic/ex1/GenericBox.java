@@ -1,4 +1,4 @@
-package generic;
+package generic.ex1;
 
 /**
  * 제네릭 클래스는 <>(다이아몬드 기호)안에 타입 매개변수를 정의한다.

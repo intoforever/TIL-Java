@@ -1,4 +1,4 @@
-package generic;
+package generic.ex1;
 
 public class StringBox {
     private String value;

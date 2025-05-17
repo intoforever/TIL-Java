@@ -1,4 +1,4 @@
-package generic;
+package generic.ex1;
 
 // Ctrl + Alt + n 눌러서 inline variable 만들기
 

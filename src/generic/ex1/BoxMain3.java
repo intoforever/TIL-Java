@@ -1,4 +1,4 @@
-package generic;
+package generic.ex1;
 
 /**
  * 제네릭 클래스는 생성하는 시점에 <> 사이에 원하는 타입을 지정한다.
