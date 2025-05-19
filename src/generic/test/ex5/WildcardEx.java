@@ -24,7 +24,7 @@ public class WildcardEx {
         System.out.println("이름 = " + t.getName());
     }
 
-    static void printWildcardV2(Box<? extends Animal> box) { // 제한 와일드카드
+    static void printWildcardV2(Box<? extends Animal> box) { // 상한 와일드카드
         Animal animal = box.get();
         System.out.println("이름 = " + animal.getName());
     }
