@@ -1,4 +1,4 @@
-package generic.test.ex3;
+package generic.ex3;
 
 /**
  * 문제점1: 제네릭 타입은 코드 작성 시 Object가 제공하는 메서드만 호출할 수 있다.

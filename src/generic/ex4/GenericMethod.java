@@ -1,4 +1,4 @@
-package generic.test.ex4;
+package generic.ex4;
 
 /**
  * 제네릭 메서드는 클래스 전체가 아니라 특정 메서드 단위로 제네릭을 도입할 때 사용한다.

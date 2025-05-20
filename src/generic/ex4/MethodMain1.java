@@ -1,4 +1,4 @@
-package generic.test.ex4;
+package generic.ex4;
 
 /**
  * 제네릭 타입과 제네릭 메서드는 다르다.

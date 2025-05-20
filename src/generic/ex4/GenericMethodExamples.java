@@ -1,4 +1,4 @@
-package generic.test.ex4;
+package generic.ex4;
 
 /**
  * 인스턴스 메서드, static 메서드
