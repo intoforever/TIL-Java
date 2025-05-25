@@ -7,4 +7,30 @@ public class Node {
     public Node(Object item) {
         this.item = item;
     }
+/*
+    // IDE 생성 toString()
+    @Override
+    public String toString() {
+        return "Node{" +
+                "item=" + item +
+                ", next=" + next + // ★next는 또한 Node임, 따라서 내부의 toString이 다시 호출됨★
+                "}";
+    }
+*/
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        Node x = this;
+        sb.append("[");
+        while (x != null) {
+            sb.append(x.item);
+            if (x.next != null) {
+                sb.append("->");
+            }
+            x = x.next;
+        }
+        sb.append("]");
+        return sb.toString();
+    }
 }
