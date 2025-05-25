@@ -1,8 +1,11 @@
 package collection.link;
 
+/**
+ * 노드는 내부에 데이터와 다음 노드에 대한 참조를 가지고 있다.
+ */
 public class Node {
-    Object item;
-    Node next;
+    Object item; // 현재 노드의 데이터
+    Node next; // 다음 노드의 참조
 
     public Node(Object item) {
         this.item = item;
