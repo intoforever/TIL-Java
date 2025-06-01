@@ -21,13 +21,12 @@ public class ListEx3 {
             }
             numbers.add(input);
         }
-        int total = 0;
-        int size = numbers.size();
+        int sum = 0;
         for (Integer number : numbers) {
-            total += number;
+            sum += number;
         }
-
-        System.out.println("입력한 정수의 합계: " + total);
-        System.out.println("입력한 정수의 평균: " + (double) total / size);
+        double average = (double) sum / numbers.size();
+        System.out.println("입력한 정수의 합계: " + sum);
+        System.out.println("입력한 정수의 평균: " + average);
     }
 }
