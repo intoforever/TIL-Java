@@ -1,0 +1,33 @@
+package collection.list.test.ex1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ * 문제와 풀이1
+ * 문제3 - 합계와 평균
+ * - 사용자에게 n개의 정수를 입력받아서 List에 보관하고, 보관한 정수의 합계와 평균을 계산하는 프로그램을 작성하자.
+ */
+public class ListEx3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        System.out.println("n개의 정수를 입력하세요 (종료 0)");
+        while (true) {
+            int input = scanner.nextInt();
+            if (input == 0) {
+                break;
+            }
+            numbers.add(input);
+        }
+        int total = 0;
+        int size = numbers.size();
+        for (Integer number : numbers) {
+            total += number;
+        }
+
+        System.out.println("입력한 정수의 합계: " + total);
+        System.out.println("입력한 정수의 평균: " + (double) total / size);
+    }
+}
