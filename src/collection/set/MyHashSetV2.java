@@ -4,7 +4,10 @@ import java.util.Arrays;
 import java.util.LinkedList;
 
 /**
- * 모든 타입을 저장할 수 있도록 Object를 사용
+ * MyHashSetV2는 Object를 받을 수 있다.
+ * 따라서 직접 만든 Member와 같은 객체도 보관할 수 있다.
+ *
+ * ※ 여기서 주의할 점은 직접 만든 객체가 hashCode(), equals() 두 메서드를 반드시 구현해야 한다는 점이다.
  */
 public class MyHashSetV2 {
     static final int DEFAULT_INITIAL_CAPACITY = 16;
@@ -60,7 +63,7 @@ public class MyHashSetV2 {
     }
 
     private int hashIndex(Object value) {
-        // 음수가 나올 수 있어서 절대값으로 변경해줘야 함
+        // !!주의!! 음수가 나올 수 있어서 절대값으로 변경해줘야 함
         return Math.abs(value.hashCode()) % capacity;
     }
 
