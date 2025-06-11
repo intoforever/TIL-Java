@@ -14,10 +14,7 @@ import java.util.TreeSet;
  */
 public class UniqueNamesTest3 {
     public static void main(String[] args) {
-        Integer[] inputArray = {30, 20, 20, 10, 10};
-
-        // 코드 작성
-        Set<Integer> set = new TreeSet<>(List.of(inputArray));
+        Set<Integer> set = new TreeSet<>(List.of(30, 20, 20, 10, 10));
         for (Integer s : set) {
             System.out.println(s);
         }
