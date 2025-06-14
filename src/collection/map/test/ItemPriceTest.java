@@ -20,11 +20,13 @@ public class ItemPriceTest {
 
         // 코드 작성
         List<String> list = new ArrayList<>();
-        for (String key : map.keySet()) {
-            if (map.get(key) == 1000) {
-                list.add(key);
+        
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 1000) {
+                list.add(entry.getKey());
             }
         }
+
         System.out.println(list);
     }
 }
