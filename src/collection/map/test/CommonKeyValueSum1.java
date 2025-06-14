@@ -2,7 +2,6 @@ package collection.map.test;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * 문제2 - 공통의 합
@@ -22,14 +21,12 @@ public class CommonKeyValueSum1 {
         map2.put("D", 6);
 
         // 코드 작성
-        Set<String> keySet = map1.keySet();
-        keySet.retainAll(map2.keySet());
-
-        Map<String, Integer> map3 = new HashMap<>();
-        for (String key : keySet) {
-            map3.put(key, (map1.get(key) + map2.get(key)));
+        Map<String, Integer> result = new HashMap<>();
+        for (String key : map1.keySet()) {
+            if (map2.containsKey(key)) {
+                result.put(key, map1.get(key) + map2.get(key));
+            }
         }
-        
-        System.out.println(map3);
+        System.out.println(result);
     }
 }
