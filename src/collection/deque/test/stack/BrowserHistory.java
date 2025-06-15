@@ -5,12 +5,22 @@ import java.util.Deque;
 
 public class BrowserHistory {
     private Deque<String> history = new ArrayDeque<>();
+    private String currentPage = null;
 
-    public void visitPage(String s) {
-        history.push(s);
+    public void visitPage(String url) {
+        if (currentPage != null) {
+            history.push(currentPage);
+        }
+        currentPage = url;
+        System.out.println("방문: " + url);
     }
 
     public String goBack() {
-        return history.pop();
+        if (!history.isEmpty()) {
+            String currentPage = history.pop();
+            System.out.println("뒤로 가기: " + currentPage);
+            return currentPage;
+        }
+        return null;
     }
 }
