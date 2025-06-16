@@ -16,11 +16,8 @@ public class TaskScheduler {
 
     public void processNextTask() {
         Task task = tasks.poll();
-        if (task == null) {
-            return;
+        if (task != null) {
+            task.execute();
         }
-        task.execute();
     }
-
-    // 코드 작성
 }
