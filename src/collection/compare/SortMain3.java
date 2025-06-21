@@ -8,7 +8,7 @@ import java.util.Arrays;
  *
  * 그런데 기본 정렬 외에 다른 정렬 방법을 사용해야 하는 경우 비교자(Comparator)를 별도로 구현해서 정렬 메서드에 전달하면 된다.
  * 이 경우 전달한 Comparator가 항상 우선권을 가진다.
- * 
+ *
  * 자바가 제공하는 Integer, String같은 기본 객체들은 대부분 Comparable을 구현해 두었다.
  */
 public class SortMain3 {

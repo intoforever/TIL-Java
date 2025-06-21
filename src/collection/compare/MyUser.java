@@ -22,7 +22,7 @@ public class MyUser implements Comparable<MyUser> {
 
     @Override
     public int compareTo(MyUser o) {
-        System.out.println(this + " vs " + o);
+        // System.out.println(this + " vs " + o);
         return this.age < o.age ? -1 : (this.age == o.age ? 0 : 1);
     }
 
